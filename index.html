@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PranDisha — The right next step, when every second matters.</title>
+  <meta name="description" content="PranDisha is a voice-first first-aid guidance prototype in English and Hindi. Describe what happened and get one clear next step while professional help is being arranged. Demonstration only." />
+  <meta name="theme-color" content="#10243A" />
+  <meta property="og:title" content="PranDisha — Voice-first first-aid guidance (prototype)" />
+  <meta property="og:description" content="Clear, voice-led first-aid guidance in English and Hindi while professional help is being arranged." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%2310243A'/><path d='M16 7v18M7 16h18' stroke='%2313A995' stroke-width='3.6' stroke-linecap='round'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#app-main" data-key="skipLink">Skip to content</a>
+
+<!-- ═════════ HEADER ═════════ -->
+<header class="app-header" role="banner">
+  <div class="header-inner">
+    <button id="btn-home" class="logo-btn" aria-label="PranDisha — go to home">
+      <svg class="logo-mark" viewBox="0 0 36 36" aria-hidden="true">
+        <rect width="36" height="36" rx="11" fill="#13A995"/>
+        <path d="M18 8.5v19M8.5 18h19" stroke="#10243A" stroke-width="4" stroke-linecap="round"/>
+        <path d="M24.5 10.5c2.6 1.4 4.2 4.1 4.2 7.5s-1.6 6.1-4.2 7.5" stroke="#10243A" stroke-width="2" stroke-linecap="round" fill="none" opacity=".55"/>
+      </svg>
+      <span class="logo-wordmark">Pran<b>Disha</b></span>
+    </button>
+    <span class="header-label" data-key="headerLabel">VOICE-FIRST FIRST-AID DEMO</span>
+
+    <div class="header-right">
+      <div class="lang-toggle" role="group" aria-label="Language selection">
+        <button id="btn-lang-en" class="lang-btn active" aria-pressed="true" lang="en">English</button>
+        <button id="btn-lang-hi" class="lang-btn" aria-pressed="false" lang="hi">हिन्दी</button>
+      </div>
+      <button id="btn-about-header" class="header-link" data-key="aboutNav">About &amp; Safety</button>
+      <a href="tel:112" class="header-call" id="call-header" aria-label="Call 112 — emergency services">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.3 4.6-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2L21 14.4v3A3.6 3.6 0 0 1 17.4 21C9.4 21 3 14.6 3 6.6A3.6 3.6 0 0 1 6.6 3z" fill="currentColor"/></svg>
+        <span data-key="call112">Call 112</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="proto-banner" role="note">
+  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3.5M8 11h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  <span data-key="protoBanner">Prototype demonstration — provisional content, not clinically reviewed. Not a substitute for emergency services.</span>
+</div>
+
+<main id="app-main">
+
+<!-- ═════════ HOME ═════════ -->
+<section id="screen-home" class="screen active" aria-label="Home">
+
+  <div class="hero">
+    <div class="hero-left">
+      <p class="eyebrow" data-key="heroEyebrow">EMERGENCY GUIDANCE · MADE ACCESSIBLE</p>
+      <h1 class="hero-headline" data-key="heroHeadline">In an emergency, know your <em>next step.</em></h1>
+      <p class="hero-sub" data-key="heroSub">Clear, voice-led first-aid guidance while professional help is being arranged.</p>
+
+      <div class="hero-actions">
+        <button id="btn-talk" class="btn-primary" aria-label="Talk to PranDisha">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3.5 3.5 0 0 1 3.5 3.5v6a3.5 3.5 0 0 1-7 0v-6A3.5 3.5 0 0 1 12 2z" fill="currentColor"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+          <span data-key="talkBtn">Talk to PranDisha</span>
+        </button>
+        <button id="btn-explore" class="btn-secondary">
+          <span data-key="exploreBtn">Explore emergency situations</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5L8 13l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="hero-safety" role="note">
+        <span class="hero-safety-badge" aria-hidden="true">112</span>
+        <p data-key="heroSafety"><strong>Call 112 first.</strong> PranDisha supports — it never replaces — emergency services, and it never places a call for you.</p>
+      </div>
+
+      <ul class="hero-facts" aria-label="Prototype capabilities">
+        <li><b>10</b> <span data-key="factScenarios">demo scenarios</span></li>
+        <li><b>EN · हिं</b> <span data-key="factLang">spoken &amp; written</span></li>
+        <li><b>0</b> <span data-key="factData">data stored</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-right">
+      <figure class="hero-figure">
+        <img src="assets/hero-bystander.png" width="1024" height="1024" alt="A woman kneels beside a man resting against a wall on a neighbourhood street, looking at her phone for guidance" fetchpriority="high" />
+        <span class="hero-wash" aria-hidden="true"></span>
+        <figcaption class="hero-caption" data-key="heroCaption">Illustrative image · generated for this prototype</figcaption>
+      </figure>
+
+      <!-- Floating voice assistant -->
+      <div id="voice-card" class="voice-card" role="region" aria-label="PranDisha voice assistant">
+        <div class="vc-head">
+          <span class="vc-dot" aria-hidden="true"></span>
+          <span class="vc-name">PranDisha</span>
+          <span id="vp-status" class="vc-status" aria-live="polite" data-key="vpReady">Ready to guide</span>
+        </div>
+
+        <div class="vc-main">
+          <button id="btn-mic" class="mic-btn" aria-label="Start listening">
+            <span class="mic-pulse" aria-hidden="true"></span>
+            <svg class="mic-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-10 0V8a5 5 0 0 1 5-5z" fill="currentColor"/><path d="M8 15a8 8 0 0 0 16 0M16 23v6M11.5 29h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+          </button>
+          <div id="wave-bars" class="wave-bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <p id="vp-prompt" class="vc-prompt" data-key="vpPrompt">Tap the microphone and say what happened.</p>
+
+        <div id="vp-transcript-box" class="vc-transcript" hidden>
+          <span class="vc-label" data-key="vpHeard">Heard on this device</span>
+          <span id="vp-transcript-text"></span>
+        </div>
+        <div id="vp-error-box" class="vc-error" role="alert" hidden>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 8v4M10 14h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span id="vp-error-text"></span>
+        </div>
+
+        <form id="voice-text-form" class="vc-type" autocomplete="off">
+          <label for="voice-text" class="sr-only" data-key="typeLabel">Or type what happened</label>
+          <input id="voice-text" type="text" maxlength="160" data-ph="typePlaceholder" placeholder="Or type: “someone is choking”" />
+          <button type="submit" aria-label="Find guidance" data-aria="typeGo">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <p id="vp-no-speech" class="vc-note" hidden data-key="vpNoSpeech">Voice recognition isn’t available in this browser. Type above or choose a situation below.</p>
+      </div>
+
+      <div class="hero-chip" aria-hidden="true">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M10 2l6 2.5v5c0 4-2.6 7-6 8.5-3.4-1.5-6-4.5-6-8.5v-5L10 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M7.2 10l2 2 3.6-3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-key="chipProf">Professional help stays the priority</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scenario explorer -->
+  <section class="explorer" id="explorer" aria-labelledby="explorer-title">
+    <div class="explorer-head">
+      <div>
+        <p class="eyebrow eyebrow-dark" data-key="exEyebrow">10 DEMONSTRATION SITUATIONS</p>
+        <h2 id="explorer-title" class="explorer-title" data-key="exTitle">When something happens, start here.</h2>
+      </div>
+      <p class="explorer-sub" data-key="exSub">Choose a situation or describe it in your own words.</p>
+    </div>
+    <div id="scenario-grid" class="scenario-grid"></div>
+    <p class="explorer-note" data-key="exNote">These are ten demonstration scenarios, not a ranking of the most common emergencies in India.</p>
+  </section>
+
+  <footer class="home-footer" role="contentinfo">
+    <p data-key="footerCopy">VBYLD 2027 Hack for Social Cause · Provisional demonstration content · Requires review by qualified emergency-care professionals before any public use. Not affiliated with or endorsed by any government body or the organisations cited.</p>
+    <button class="footer-link" id="btn-about-footer" data-key="aboutNav">About &amp; Safety</button>
+  </footer>
+</section>
+
+<!-- ═════════ GUIDANCE ═════════ -->
+<section id="screen-scenario" class="screen" aria-label="Guidance" hidden>
+  <div class="sg-layout">
+    <div class="sg-main">
+      <div class="sg-topbar">
+        <button id="btn-back-home" class="chip-btn" aria-label="Back to home">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12 4.5L6.5 10l5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-key="backHome">Home</span>
+        </button>
+        <h2 id="scenario-title" class="sg-title"></h2>
+        <span id="step-counter" class="step-pill" aria-live="polite"></span>
+      </div>
+
+      <div id="progress-segs" class="progress-segs" aria-hidden="true"></div>
+
+      <article id="instruction-card" class="sg-card">
+        <div class="sg-visual" aria-hidden="true">
+          <div id="sg-art" class="sg-art"></div>
+          <div id="sg-step-icon" class="sg-step-icon"></div>
+        </div>
+        <div class="sg-body">
+          <div class="sg-meta">
+            <span id="step-kind" class="kind-chip"></span>
+            <span id="step-badge" class="sg-step-label"></span>
+          </div>
+          <p id="instruction-text" class="sg-text" aria-live="polite"></p>
+          <p class="sg-transcript-tag"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 4h11M2.5 8h11M2.5 12h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span data-key="transcript">Written transcript — always shown</span></p>
+        </div>
+      </article>
+
+      <div class="audio-bar" role="group" aria-label="Audio controls">
+        <button id="btn-listen" class="listen-btn" aria-label="Listen to instruction">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9.5h3.5L13 6v12l-4.5-3.5H5v-5z" fill="currentColor"/><path d="M16 9a4.5 4.5 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none"/></svg>
+          <span id="listen-label" data-key="listen">Listen to instruction</span>
+        </button>
+        <button id="btn-pause" class="audio-btn" aria-label="Pause audio" disabled>
+          <svg id="pause-ico" viewBox="0 0 20 20" aria-hidden="true"><rect x="5" y="4" width="3.4" height="12" rx="1" fill="currentColor"/><rect x="11.6" y="4" width="3.4" height="12" rx="1" fill="currentColor"/></svg>
+          <span id="pause-label" data-key="pause">Pause</span>
+        </button>
+        <button id="btn-repeat" class="audio-btn" aria-label="Repeat instruction">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10a6 6 0 1 1 1.6 4.1M4 15v-4.5h4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-key="repeat">Repeat</span>
+        </button>
+        <div id="audio-state" class="audio-state" aria-live="polite" data-state="idle">
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span id="audio-state-text" data-key="audioIdle">Audio ready</span>
+        </div>
+        <label class="auto-read" for="auto-read">
+          <input id="auto-read" type="checkbox" />
+          <span class="switch" aria-hidden="true"></span>
+          <span data-key="autoRead">Auto-read instructions</span>
+        </label>
+      </div>
+      <p id="speech-fallback" class="speech-fallback" role="status" hidden></p>
+
+      <div class="sg-nav" role="navigation" aria-label="Step navigation">
+        <button id="btn-prev" class="nav-btn" aria-label="Previous step" disabled>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12 4.5L6.5 10l5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-key="prevStep">Previous</span>
+        </button>
+        <button id="btn-restart" class="nav-btn nav-ghost" aria-label="Restart scenario">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10a6 6 0 1 1 1.6 4.1M4 15v-4.5h4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-key="restart">Restart</span>
+        </button>
+        <button id="btn-next" class="nav-btn nav-next" aria-label="Next step">
+          <span data-key="nextStep">Continue</span>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M8 4.5l5.5 5.5L8 15.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <aside class="sg-side" aria-label="Emergency actions">
+      <div class="side-call">
+        <p class="side-call-kicker" data-key="callFirst">CALL FIRST</p>
+        <a href="tel:112" id="call-side" class="side-call-btn" aria-label="Call 112 emergency services">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.3 4.6-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2L21 14.4v3A3.6 3.6 0 0 1 17.4 21C9.4 21 3 14.6 3 6.6A3.6 3.6 0 0 1 6.6 3z" fill="currentColor"/></svg>
+          <span data-key="callBtnLg">Call 112</span>
+        </a>
+        <p class="side-note" data-key="callNote">Tap to dial on a phone. PranDisha never places the call for you.</p>
+      </div>
+      <div class="side-card side-safety">
+        <h3 data-key="safetyH">Safety reminder</h3>
+        <p data-key="safetyP">Follow the emergency call handler’s directions over anything shown here. If the situation changes or gets worse, call 112 again.</p>
+      </div>
+      <div class="side-card">
+        <h3 data-key="langH">Language</h3>
+        <div class="side-lang">
+          <span class="side-lang-now" id="side-lang-now">English</span>
+          <div class="mini-toggle" role="group" aria-label="Language selection">
+            <button class="mini-lang" data-setlang="en" aria-label="English">EN</button>
+            <button class="mini-lang" data-setlang="hi" aria-label="हिन्दी">हिं</button>
+          </div>
+        </div>
+      </div>
+      <div class="side-card side-prov">
+        <h3 data-key="provH">Provisional content</h3>
+        <p data-key="provP">These instructions are demonstration content. They have not been reviewed by qualified emergency-care professionals and must not be relied on as medical advice.</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Mobile sticky emergency bar -->
+  <a href="tel:112" class="sticky-call" id="call-sticky" aria-label="Call 112 emergency services">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.3 4.6-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2L21 14.4v3A3.6 3.6 0 0 1 17.4 21C9.4 21 3 14.6 3 6.6A3.6 3.6 0 0 1 6.6 3z" fill="currentColor"/></svg>
+    <span data-key="callBtnLg">Call 112</span>
+  </a>
+</section>
+
+<!-- ═════════ END ═════════ -->
+<section id="screen-end" class="screen" aria-label="Complete" hidden>
+  <div class="end-wrap">
+    <div class="end-check" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="29" stroke="#13A995" stroke-width="2.5"/><path d="M19 33l9.5 9.5L46 23" stroke="#13A995" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h2 id="end-headline" class="end-headline" data-key="endHeadline">Keep following emergency-service guidance.</h2>
+    <p class="end-body" data-key="endBody">Continue following the call handler’s instructions until professional help arrives. Tell responders what happened and what has already been done.</p>
+    <a href="tel:112" id="call-end" class="end-call" aria-label="Call 112 now">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.3 4.6-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2L21 14.4v3A3.6 3.6 0 0 1 17.4 21C9.4 21 3 14.6 3 6.6A3.6 3.6 0 0 1 6.6 3z" fill="currentColor"/></svg>
+      <span data-key="callBtnEnd">Call 112 now</span>
+    </a>
+    <div class="end-actions">
+      <button id="btn-repeat-last" class="nav-btn"><span data-key="repeatLast">Hear last instruction</span></button>
+      <button id="btn-restart-scenario" class="nav-btn"><span data-key="restartScenario">Restart this guidance</span></button>
+      <button id="btn-home-from-end" class="nav-btn nav-next"><span data-key="goHome">Back to home</span></button>
+    </div>
+    <p class="end-note" data-key="endNote">This was a demonstration using predefined, provisional guidance. It does not confirm any clinical outcome.</p>
+  </div>
+</section>
+
+<!-- ═════════ ABOUT ═════════ -->
+<section id="screen-about" class="screen" aria-label="About and safety" hidden>
+  <div class="about-wrap">
+    <div class="about-top">
+      <button id="btn-back-from-about" class="chip-btn" aria-label="Back to home">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12 4.5L6.5 10l5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-key="backHome">Home</span>
+      </button>
+      <h2 class="about-title" data-key="aboutPageTitle">About &amp; Safety</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card about-wide">
+        <h3 data-key="aboutWhatTitle">What is PranDisha?</h3>
+        <p data-key="aboutWhatBody"></p>
+        <p data-key="aboutTechNote"></p>
+      </div>
+      <div class="about-card about-safety">
+        <h3 data-key="aboutSafetyTitle">Safety boundaries</h3>
+        <ul id="about-safety-list" class="about-list"></ul>
+      </div>
+      <div class="about-card">
+        <h3 data-key="aboutVoiceTitle">Voice: what to expect</h3>
+        <ul id="about-voice-list" class="about-list about-teal"></ul>
+      </div>
+      <div class="about-card">
+        <h3 data-key="aboutSourcesTitle">Sources consulted</h3>
+        <ul id="about-sources" class="about-list about-teal"></ul>
+        <p class="about-small" data-key="sourcesNote"></p>
+      </div>
+      <div class="about-card">
+        <h3 data-key="aboutFutureTitle">Before any real-world use</h3>
+        <ul id="about-future-list" class="about-list about-teal"></ul>
+      </div>
+      <div class="about-card about-wide about-review">
+        <h3 data-key="aboutReviewTitle">Flagged for clinical review</h3>
+        <ul id="about-review-list" class="about-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="scenarios.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
