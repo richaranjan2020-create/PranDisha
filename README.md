@@ -1,4 +1,4 @@
-# PranDisha (प्राणदिशा) — v7.0 Clinical Bento Edition
+# PranDisha (प्राणदिशा) — Clinical Bento Edition
 
 > **The right next step, when every second matters.**  
 > **जब हर सेकंड कीमती हो, सही अगला कदम।**
