@@ -1,0 +1,19 @@
+{
+  "name": "PranDisha — Emergency First-Aid Assistant",
+  "short_name": "PranDisha",
+  "description": "Bilingual, voice-first emergency first-aid guidance prototype for India. VBYLD 2027 Hack for Social Cause. Demonstration only.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F6FA",
+  "theme_color": "#0D9488",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='42' fill='%230D9488'/%3E%3Cpath d='M96 52v88M52 96h88' stroke='%23FFFFFF' stroke-width='22' stroke-linecap='round'/%3E%3Ccircle cx='146' cy='46' r='13' fill='%23E11D48'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

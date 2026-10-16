@@ -1,0 +1,28 @@
+{
+  "name": "prandisha",
+  "version": "7.0.0",
+  "description": "PranDisha — bilingual (English/Hindi), voice-first emergency first-aid guidance prototype. Clinical Bento Edition for VBYLD 2027 Hack for Social Cause. Demonstration only, not medical advice.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check app.js && node --check scenarios.js && node --check sw.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "first-aid",
+    "emergency",
+    "healthcare",
+    "voice",
+    "hindi",
+    "accessibility",
+    "pwa",
+    "vbyld"
+  ],
+  "license": "MIT",
+  "private": true
+}

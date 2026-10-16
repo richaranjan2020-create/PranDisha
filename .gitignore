@@ -1,0 +1,26 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log*
+*.log
+
+# Temporary browser profiles created during local screenshot/testing runs
+.tmp_profile/
+.tmp*/
+
+# Environment files — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# Build output (if a build step is added later)
+dist/
+build/
